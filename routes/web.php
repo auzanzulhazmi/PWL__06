@@ -30,3 +30,7 @@ Route::get('/menu', [MenuController::class, 'index']);
 Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
